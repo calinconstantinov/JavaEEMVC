@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>Test Form</title>
+    <link rel="stylesheet" href="static/styles.css" type="text/css"/>
+</head>
+<body>
+<form action="#" class="form" method="GET">
+    <!-- min 5 chars, max 50 -->
+    <input type="text" name="firstName" placeholder="first name"/> <br/>
+    <!-- min 5 chars, max 50 -->
+    <input type="text" name="lastName" placeholder="last name"/> <br/>
+    <!-- between 7 and 12 digits, can also begin with a '+' -->
+    <input type="text" name="telephoneNo" placeholder="telephone no"/> <br/>
+    <!-- read-only random digit between 0 and 9 -->
+    <input type="text" name="no1" readonly/> <br/>
+    <!-- read-only random digit between 0 and 9 -->
+    <input type="text" name="no2" readonly/> <br/>
+    <!-- the sum -->
+    <input type="text" name="sum" placeholder="The sum of the above two values is ..."/> <br/>
+    <input type="submit" value="Submit" name="submit"/>
+</form>
+
+<!-- Include the JS file at the end, after all HTML elements have been loaded -->
+<script src="static/index.js" type="text/javascript"></script>
+</body>
+</html>
