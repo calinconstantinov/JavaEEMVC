@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+
+  <display-name>JavaEEMVC</display-name>
+
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+
+  <servlet>
+    <servlet-name>HelloServlet</servlet-name>
+    <servlet-class>ro.ucv.ace.servlet.HelloServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>HelloRedirectServlet</servlet-name>
+    <servlet-class>ro.ucv.ace.servlet.HelloRedirectServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>HelloMvcServlet</servlet-name>
+    <servlet-class>ro.ucv.ace.mvc.controller.HelloMvcServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>default</servlet-name>
+    <url-pattern>/static/*</url-pattern>
+    <url-pattern>*.html</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>HelloServlet</servlet-name>
+    <url-pattern>/Hello</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>HelloRedirectServlet</servlet-name>
+    <url-pattern>/HelloRedirect</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>HelloMvcServlet</servlet-name>
+    <url-pattern>/HelloMvc</url-pattern>
+  </servlet-mapping>
+
+</web-app>
